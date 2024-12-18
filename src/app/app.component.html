@@ -1,0 +1,25 @@
+
+  <nav class = "navbar navbar-expand-lg navbar-dark bg-primary p-2">
+    <a class = "navbar-brand" href = "#">ADMIN PANEL</a>
+
+    <div class="collapse navbar-collapse" id = "navbarSupportedContent">
+      <ul class = "navbar-nav mr-auto">
+        <li class = "nav-item active">
+          <a class = "nav-link" routerLink = "/" routerLinkActive = "active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link" routerLink = "/user" routerLinkActive = "active">User</a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link" routerLink = "/post" routerLinkActive = "active">Post</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<!--<app-data-binding-demo></app-data-binding-demo>
+<app-directives-demo></app-directives-demo>-->
+<router-outlet />
+
